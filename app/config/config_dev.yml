@@ -32,3 +32,8 @@ monolog:
 
 #swiftmailer:
 #    delivery_addresses: ['me@example.com']
+
+# Dumping Asset Files in the dev Environment
+# http://symfony.com/doc/2.8/frontend/assetic/asset_management.html#dumping-asset-files-in-the-dev-environment
+assetic:
+    use_controller: false
