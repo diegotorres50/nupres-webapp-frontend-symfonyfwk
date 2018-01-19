@@ -7,4 +7,7 @@
     <route id="nupres_public_homepage" path="/">
         <default key="_controller">NupresPublicBundle:Default:index</default>
     </route>
+    <route id="nupres_public_login" path="/login">
+        <default key="_controller">NupresPublicBundle:Security:index</default>
+    </route>    
 </routes>
