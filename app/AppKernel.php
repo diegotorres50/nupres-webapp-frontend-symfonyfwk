@@ -35,4 +35,12 @@ class AppKernel extends Kernel
     {
         $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
     }
+
+
+    // Para solucionar warning servergrove.com por mensaje: date_default_timezone_get() - It is not safe to rely on the system's timezone settings 
+    public function __construct($environment, $debug)
+    {
+        date_default_timezone_set( 'Europe/Paris' );
+        parent::__construct($environment, $debug);
+    }
 }
